@@ -1,0 +1,152 @@
+.club-container{
+    width: 100%;
+    height: 100% auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+.club-header{
+    width: 100%;
+    height: 60svh;
+    background-image: url(../../../public/clubman.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    display: flex;
+    align-items: center;
+    & h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 60px;
+        margin: 5%;
+    }
+
+}
+
+  & .club-body{
+        width: 54%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;      
+        align-items: center;  
+
+        & .article{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            & section{
+                width: 23%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                transition: transform 0.5s, box-shadow 0.1s;
+
+                
+            }
+            & section:hover {
+                transform: scale(1.09); 
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -2px, rgba(0, 0, 0, 0.3) 0px 5px 10px -3px; 
+                border: 1px solid black;
+              }
+        }
+
+        & .text{
+            width: 100%;
+            height: 5%;
+
+            & h3{
+                font-size: 40px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                animation: text-movenment ease-in 20s;
+                
+            }
+
+            & p{
+               font-size: 22px;
+               font-family: cursive; 
+               animation: text-movenment ease-out 2.5s;
+               /* border: 1px solid rgb(0, 195, 255); */
+               
+            }
+
+            @keyframes text-movenment {
+                0%{
+                    transform:translateX(100%)
+                }
+                /* 100%{
+                    transform:translateX(-100%)
+                } */
+            }
+        }
+
+
+
+        & .img-direction{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            gap: 10px;
+
+            & .img-holder{
+                width: 70%;
+                height: 100%;
+                background-image: url(../../../public/road.webp);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat; 
+            }
+
+            & div{
+                width: 29%;
+                height: 100%;
+                background-color:#001838 ;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                & h3{
+                    
+                        font-size: 25px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        color: white;
+                }
+
+                & p{
+                    
+                    font-size: 20px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    color: white;
+                }
+
+                & a{
+                    
+                    font-size: 15px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    color: white;
+                    text-decoration: underline;
+            }
+            }
+        }
+
+        & footer{
+             width: 50%;
+             height: 30%;
+             background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWTghCZ-FnKJZCWoFszKH3VOgs8FALPOOBvQ&s);
+             background-position: center;
+             background-size: contain;
+             background-repeat: no-repeat; 
+        }
+   }
+
+}

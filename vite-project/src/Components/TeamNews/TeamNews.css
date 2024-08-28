@@ -1,0 +1,142 @@
+.team-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   & .team-wrapper{
+         width: 100%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+    & .team-holder{
+        height: 90vh;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+
+        & section{
+            width: 65%;
+            display: flex;
+            align-items: center; 
+            justify-content: space-around;
+            flex-direction: column;
+
+
+            & .team-one{
+                width: 100%;
+                height: 30%;
+                display: flex;
+                justify-content: space-around;
+
+                & section{
+                    width: 45%;
+                    height: 100%;
+                     display: flex;
+                    align-items: center;
+                    justify-content: space-around; 
+                    background-size: cover;
+                    
+                   
+                }
+
+              
+            }
+    
+            & .team-two{
+                width: 100%;
+                height: 20%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                & section{
+                    width: 23%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around; 
+                    font-size: 12px;
+
+                }
+            }
+    
+            & .team-three{
+                width: 100%;
+                height: 20%;
+                display: flex;
+                justify-content: space-around;
+
+                & section{
+                    width: 23%;
+                    height: 100%;
+                }
+
+                & div{
+                    width: 23%;
+                    height: 100%;
+                    background-color: white;
+                }
+            }
+        }
+
+        & .fixtures{
+            width: 35%;
+            display: flex;
+            align-items: center;
+            justify-content:  space-around;
+            flex-direction: column;
+            
+            & .live{
+                width: 95%;
+                height: 30%;
+                background-image: url(../../assets/live.jpeg);
+                background-size: contain;
+                background-repeat: no-repeat; 
+
+            }
+
+            & .score{
+                width: 95%;
+                height: 30%;
+                background-image: url(../../assets/score.jpeg);
+                background-size: contain;
+                background-repeat: no-repeat; 
+
+
+            }
+        }
+
+        
+    }
+
+    & .line-break{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        & div{
+            width: 30%;
+            height: 1px;
+            border: 1px solid black;
+        }
+        
+        & section {
+            width: 20%;
+            height: 30px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-weight: 600;
+
+        }
+    }
+}
+    
+   
+}
